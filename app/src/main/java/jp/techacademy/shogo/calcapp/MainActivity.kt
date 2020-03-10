@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
+        //edhitTextはnull判定ができなかった
         if (input1.text.length != 0  && input2.text.length != 0) {
             //入力の値が両方ともnullでなければ
             var in1 = input1.text.toString().toDouble()
